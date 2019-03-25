@@ -1,5 +1,5 @@
 # Golemio - dokumentace modulů Datové platformy
 
-Dokumentace je na https://janvlasaty.github.io/golemio-docs.github.io/
+Dokumentace je na https://janvlasaty.github.io/golemio-docs/
 
 Pracovní verze.
