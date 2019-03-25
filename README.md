@@ -1,5 +1,5 @@
-# Dokumentace JŘ a poloh vozidel PID
+# Golemio - dokumentace modulů Datové platformy
 
-Dokumentace je na https://janvlasaty.github.io/ropid-vehiclepositions.github.io/
+Dokumentace je na https://janvlasaty.github.io/golemio-docs.github.io/
 
-Bez záruky. Pracovní verze.
+Pracovní verze.
