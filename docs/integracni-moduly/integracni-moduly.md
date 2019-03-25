@@ -3,7 +3,7 @@ layout: default
 title: Moduly
 nav_order: 1
 description: "Moduly Datové platformy."
-permalink: /moduly/
+permalink: /docs/moduly/
 ---
 
 #### Permission proxy
