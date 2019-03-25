@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Golemio Docs
-titlelabel: PID API
-description: Dokumentace - Polohy vozů pražské MHD
+titlelabel: Moduly DP
+description: Dokumentace modulů Datové platformy
 
 permalink: pretty
 
