@@ -16,7 +16,7 @@ Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy
 
 ### Schéma modulů
 
-<img src="/golemio-docs.github.io/assets/images/schemas/DP_schema_general.png" alt="Schéma architektury" style="margin-botom: 1rem;"/>
+<img src="/golemio-docs/assets/images/schemas/DP_schema_general.png" alt="Schéma architektury" style="margin-botom: 1rem;"/>
 
 ### Popis funkcí
 
@@ -69,4 +69,4 @@ Do této části patří i klientské aplikace vyvinuté pro práci s platformou
 
 ## Tvůrce Datové platformy
 
-<img src="/golemio-docs.github.io/assets/images/logos/OICT_logo_grey.svg" alt="Logo ROPID" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
+<img src="/golemio-docs/assets/images/logos/OICT_logo_grey.svg" alt="Logo ROPID" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
