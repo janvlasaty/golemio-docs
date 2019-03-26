@@ -55,7 +55,7 @@ Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy
 
 ### Schéma modulů
 
-<img src="/golemio-docs/assets/images/schemas/DP_schema_general.png" alt="Schéma architektury" style="margin-botom: 1rem;"/>
+<img src="/golemio-docs/assets/images/schemas/DP_schema_general.svg" alt="Schéma architektury" style="margin-botom: 1rem;"/>
 
 #### Integrační moduly platformy
 
