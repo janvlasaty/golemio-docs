@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Moduly
+title: Integrační moduly 
 nav_order: 1
-description: "Moduly Datové platformy."
+description: "Integrační moduly Datové platformy."
 permalink: /docs/moduly/
 ---
+
+
+<img src="/golemio-docs/assets/images/logos/DP_icon_permission_proxy.svg" alt="Schéma architektury" style="max-height: 40px; margin-botom: 1rem;"/>
 
 #### Permission proxy
 
