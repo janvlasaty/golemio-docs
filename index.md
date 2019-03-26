@@ -27,7 +27,7 @@ permalink: /
 * Realtime i pravidelné reporty, včetně interaktivních aplikací
 * Alerting měřených hodnot
 
-### Popis funkcí
+## Popis funkcí
 
 Datová platforma zajišťuje **integraci dat**...
 
