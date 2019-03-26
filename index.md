@@ -12,11 +12,20 @@ permalink: /
 
 **Datová platforma je soubor SW nástrojů pro integraci, ukládání a vizualizaci dat z městského prostředí, zejména pak v oblasti Smart City dat.**
 
-Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy tak, aby bylo možné je nahradit jinými komponentami, popř. SaaS moduly. Zároveň jsme 
+<img src="/golemio-docs/assets/images/schemas/DP_schema_simple.png" alt="Schéma architektury" style="margin-botom: 1rem;"/>
 
-### Schéma modulů
+### Co umí platforma zpracovat?
 
-<img src="/golemio-docs/assets/images/schemas/DP_schema_general.png" alt="Schéma architektury" style="margin-botom: 1rem;"/>
+* Metrická data (meteosenzory, detektory průjezdů aut / cyklistů)
+* Polohová data (polohy vozidel, kolony / nehody)
+* Mapové podklady (hranice území, vyznačené oblasti, trasy linek)
+* Číselníky a katalogy
+
+### Možnosti výstupů
+
+* Mapové vizualizace, včetně analytických nástrojů
+* Realtime i pravidelné reporty, včetně interaktivních aplikací
+* Alerting měřených hodnot
 
 ### Popis funkcí
 
@@ -39,6 +48,14 @@ Vizualizací rozumíme nejen zobrazování dat v grafech. K výstupům přistupu
 Senzorická data zpravidla zobrazujeme pomocí nástroje Grafana a PowerBI. Mapové podklady pak pomocí ArcGIS, popř. webových aplikací na míru (React+Redux, Mapbox, Deck.gl). Pro ad-hoc analýzu a vytvoření modelů pak volíme specialozované nástroje (RStudio aj.)
 
 Do této části patří i klientské aplikace vyvinuté pro práci s platformou. První je klientský panel, který pro klienty slouží jako rozcestník mezi jednotlivými výstupy z datových sad - modul #Client Panel. Druhou aplikací je pak správa API klíčů pro přístup k datům pro vývojáře a externí systémy - #Client API Management.
+
+## Moduly platformy
+
+Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy tak, aby bylo možné je nahradit jinými komponentami, popř. SaaS.
+
+### Schéma modulů
+
+<img src="/golemio-docs/assets/images/schemas/DP_schema_general.png" alt="Schéma architektury" style="margin-botom: 1rem;"/>
 
 #### Integrační moduly platformy
 
@@ -69,4 +86,4 @@ Do této části patří i klientské aplikace vyvinuté pro práci s platformou
 
 ## Tvůrce Datové platformy
 
-<img src="/golemio-docs/assets/images/logos/OICT_logo_grey.svg" alt="Logo ROPID" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
+<img src="/golemio-docs/assets/images/logos/OICT_logo_grey.svg" alt="Logo OICT" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
