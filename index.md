@@ -86,4 +86,4 @@ Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy
 
 ## Tvůrce Datové platformy
 
-<img src="/golemio-docs/assets/images/logos/OICT_logo_grey.svg" alt="Logo OICT" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
+<img src="/golemio-docs/assets/images/logos/OICT_logo_grey.png" alt="Logo OICT" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
