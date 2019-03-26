@@ -24,5 +24,5 @@ search_enabled: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Celá dokumentace na Apiary.io":
-    - "//golemio.docs.apiary.io"
+  "Informace o projektu na golemio.cz":
+    - "//golemio.cz"
