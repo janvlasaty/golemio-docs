@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Golemio - Integrační moduly - Input Gateway 
+title: Input Gateway 
 nav_order: 1
-description: "Input Gateway."
+description: "Dokumentace modulu Input Gateway"
 permalink: /docs/integracni-moduly/input-gateway
 has_children: true
 parent: Integrační moduly
