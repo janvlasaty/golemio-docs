@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Integration Engine
+title: Get Started
 nav_order: 1
 description: "Integration Engine - Get Started"
 permalink: /docs/integracni-moduly/integration-engine/get-started

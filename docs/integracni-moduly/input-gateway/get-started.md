@@ -8,6 +8,6 @@ parent: Input Gateway
 grand_parent: Integrační moduly
 ---
 
-# Input Gateway - get started
+# Get started
 
 popis úvod
