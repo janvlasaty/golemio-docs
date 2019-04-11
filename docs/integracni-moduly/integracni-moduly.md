@@ -8,7 +8,7 @@ permalink: /docs/moduly/
 
 # Integrační moduly
 
-Moduly, které data přijímají, validují, zpracovávají a případně i odesílají dál.
+Skupina modulů pro zpracování dat.
 
 <img src="/golemio-docs/assets/images/logos/DP_icon_permission_proxy.svg" alt="Schéma architektury" style="height: 60px; 
 margin-top: 1rem;
