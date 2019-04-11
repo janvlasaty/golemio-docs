@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Input Gateway 
-nav_order: 1
+nav_order: 2
 description: "Dokumentace modulu Input Gateway"
 permalink: /docs/integracni-moduly/input-gateway
 has_children: true
