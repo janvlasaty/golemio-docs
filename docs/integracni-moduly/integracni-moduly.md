@@ -3,7 +3,8 @@ layout: default
 title: Integrační moduly 
 nav_order: 1
 description: "Integrační moduly Datové platformy."
-permalink: /docs/moduly/
+has_children: true
+permalink: /docs/integracni-moduly/
 ---
 
 # Integrační moduly
