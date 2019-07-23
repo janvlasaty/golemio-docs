@@ -59,11 +59,12 @@ Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy
 
 #### Integrační moduly platformy
 
-* Permission Proxy
 * Input Gateway
 * Output Gateway
-* Message Broker
+* Schema Definitions
 * Integration Engine
+* Message Broker
+* Permission Proxy
 
 #### Databázové moduly platformy
 
@@ -75,14 +76,14 @@ Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy
 #### Vizualizační moduly platformy
 
 * Grafana
-* PowerBI
-* ArcGIS
-* Mapové aplikace
+* PowerBI Online
+* ArcGIS Online
 
 #### Klientské aplikace platformy
 
 * Client Panel
 * Client API Management
+* Admin Permission Proxy Management
 
 ## Tvůrce Datové platformy
 
