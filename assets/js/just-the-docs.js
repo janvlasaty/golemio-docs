@@ -175,3 +175,22 @@ else if (document.addEventListener) document.addEventListener('DOMContentLoaded'
 else document.attachEvent('onreadystatechange', function(){
     if (document.readyState=='complete') ready();
 });
+
+
+const toggleDarkModeMobile = document.querySelector('.position-mobile .js-toggle-dark-mode')
+const toggleDarkModeDesktop = document.querySelector('.position-desktop .js-toggle-dark-mode')
+const cssFile = document.querySelector('[rel="stylesheet"]')
+const originalCssRef = cssFile.getAttribute('href')
+const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+
+addEvent(toggleDarkMode, 'click', function () {
+  if (cssFile.getAttribute('href') === originalCssRef) {
+    cssFile.setAttribute('href', darkModeCssRef)
+    toggleDarkModeMobile.checked = true
+    toggleDarkModeDesktop.checked = true
+  } else {
+    cssFile.setAttribute('href', originalCssRef)
+    toggleDarkModeMobile.checked = false
+    toggleDarkModeDesktop.checked = false
+  }
+})

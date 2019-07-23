@@ -131,20 +131,6 @@
             <input type="checkbox" class="js-toggle-dark-mode">
             <i></i>
           </label>
-          <script>
-            const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
-            const cssFile = document.querySelector('[rel="stylesheet"]')
-            const originalCssRef = cssFile.getAttribute('href')
-            const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
-
-            addEvent(toggleDarkMode, 'click', function () {
-              if (cssFile.getAttribute('href') === originalCssRef) {
-                cssFile.setAttribute('href', darkModeCssRef)
-              } else {
-                cssFile.setAttribute('href', originalCssRef)
-              }
-            })
-          </script>
           {% if site.aux_links != nil %}
           <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
             {% for link in site.aux_links %}
