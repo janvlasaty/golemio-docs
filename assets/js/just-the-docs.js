@@ -165,6 +165,7 @@ function ready(){
   if (typeof lunr !== 'undefined') {
     initSearch();
   }
+  initSwitchLightDarkMode();
 }
 
 // in case the document is already rendered
@@ -176,15 +177,16 @@ else document.attachEvent('onreadystatechange', function(){
     if (document.readyState=='complete') ready();
 });
 
+function initSwitchLightDarkMode() {
+  const toggleDarkModeMobile = document.querySelector('.position-mobile .js-toggle-dark-mode')
+  const toggleDarkModeDesktop = document.querySelector('.position-desktop .js-toggle-dark-mode')
+  const cssFile = document.querySelector('[rel="stylesheet"]')
+  const originalCssRef = cssFile.getAttribute('href')
+  const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
 
-const toggleDarkModeMobile = document.querySelector('.position-mobile .js-toggle-dark-mode')
-const toggleDarkModeDesktop = document.querySelector('.position-desktop .js-toggle-dark-mode')
-const cssFile = document.querySelector('[rel="stylesheet"]')
-const originalCssRef = cssFile.getAttribute('href')
-const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
-
-addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode() })
-addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode() })
+  addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode() })
+  addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode() })
+}
 
 function switchLightDarkMode() {
   if (cssFile.getAttribute('href') === originalCssRef) {
