@@ -196,4 +196,4 @@ function switchLightDarkMode() {
     toggleDarkModeMobile.checked = false
     toggleDarkModeDesktop.checked = false
   }
-})
+}
