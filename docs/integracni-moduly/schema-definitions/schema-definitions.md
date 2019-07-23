@@ -14,15 +14,5 @@ parent: Integrační moduly
 
 ## Funkce
 
-Schema Definitions je soubor definicí databázových schémat pro jednotlivé datové sady.
-
-
-## 
-Vstupní data
-JSON, XML, CSV
-Funkce
-Validace oproti schématu pro každý definovaný endpoint
-Monitoring počtu entit/řádků v payloadu příchozích dat
-Výstup
-Data jsou zapsána ve zprávě do Message Brokeru (AMQP 0-9-1)
-Monitoring se provádí do InfluxDB
+- Schema Definitions je soubor definicí databázových schémat pro jednotlivé datové sady.
+- Správa migračních skriptů databází
