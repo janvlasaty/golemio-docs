@@ -167,6 +167,7 @@ DARK LIGHT SWITCH
   display: inline-block;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
 }
 
 .form-switch i {
@@ -216,7 +217,7 @@ DARK LIGHT SWITCH
 
 .form-switch input { display: none; }
 
-.form-switch input:checked + i { background-color: #222; }
+.form-switch input:checked + i { background-color: #666; }
 
 .form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
 
@@ -230,10 +231,10 @@ DARK LIGHT SWITCH
 }
 
 .form-switch svg#sun {
-  left: 34px;
-  top: 13px;
+  left: 26px;
+  top: 6px;
 }
 .form-switch svg#moon {
-  left: 14px;
-  top: 13px;
+  left: 6px;
+  top: 5px;
 }
