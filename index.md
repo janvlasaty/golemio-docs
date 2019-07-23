@@ -10,22 +10,51 @@ permalink: /
 
 > Datová platforma je soubor SW nástrojů pro integraci, ukládání a vizualizaci dat z městského prostředí, zejména pak v oblasti Smart City dat.
 
-### Základní funkční schéma
+## Základní funkční schéma
 
 <img src="/golemio-docs/assets/images/schemas/GolemioAim.svg" alt="Základní funkční schéma" class="img-highlighted"/>
 
 ## Co umí platforma zpracovat?
 
-* Metrická data (meteosenzory, detektory průjezdů aut / cyklistů)
-* Polohová data (polohy vozidel, kolony / nehody)
-* Mapové podklady (hranice území, vyznačené oblasti, trasy linek)
-* Číselníky a katalogy
+* Dopravní data:
+    * polohy vozů MHD, realtime výpočet zpoždění
+    * jízdní řády,
+    * detektory průjezdů aut,
+    * data o aktuální dopravní situaci (kongesce, nehody, výluky)
+    * realtime parkovací situace (P+R, on-street v zonách placeného stání, komerční parkoviště, stání pro ZTP řidiče)
+* Ovzduší
+    * meteostanice na území Prahy
+    * Smart City prvky se senzory městského prostředí
+    * 
+* Pohyb
+    * sčítače průchodů chodců
+    * cyklosčítače (detektory průjezdů, mobilní cyklonavigace)
+* BI analýzy
+    * analýza dopadu Airbnb, popř. jiných platforem
+    * zpracování mapových podkladů (zóny placeného stání, katalogy služeb)
+    * potenciál zelených střech v Praze
+    * analýza chování uživatelů karty Lítačka
+* IoT zařízení (skrze API dodavatele)
+    * senzory zaplněnosti odpadových nádob
+    * chytré osvětlení
+    * kvalita prostředí v budovách
+    * energetický monitoring budov
+    * E-Health projekt
 
-## Možnosti výstupů
+## Výstupy dat
 
-* Mapové vizualizace, včetně analytických nástrojů
-* Realtime i pravidelné reporty, včetně interaktivních aplikací
-* Alerting měřených hodnot
+* Klient - **Magistrát a městské části**
+    * Analytické webové aplikace na míru
+    * Tvorba veřejných výstupů dat
+    * BI reporting, interaktivní analýzy a podklady pro rozhodování
+    * Monitoring a alerting na základě realtime dat
+* Klient - **Městské společnosti**
+    * BI reporting, tvorba analýz a podkladů
+    * Realizace integrační mezivrtstvy mezi různými IT systémy
+* Klient - **Veřejnost**
+    * Veřejné webové aplikace
+    * Opendata
+    * Public API pro integraci do aplikací třetích stran
 
 ## Popis funkcí
 
@@ -44,14 +73,12 @@ Na ukládání dat navazuje i přístup k archivaci a retenci datových záznam�
 Datová platforma zajišťuje **vizualizaci dat**...
 
 Vizualizací rozumíme nejen zobrazování dat v grafech. K výstupům přistupujeme z mnoha hledisek. Prvním je samozřejmě služba městu a městským částem k lepšímu rozhodování a plánování. Proto je v platformě pro každý typ dat zvolen vhodný nástroj dle samotné povahy dat, ale i z hlediska potřeb klienta - míra interaktivity výstupu, dostupnost analytický nástrojů, tvorba pohledů, exportu dat apod.
-
 Senzorická data zpravidla zobrazujeme pomocí nástroje Grafana a PowerBI. Mapové podklady pak pomocí ArcGIS, popř. webových aplikací na míru (React+Redux, Mapbox, Deck.gl). Pro ad-hoc analýzu a vytvoření modelů pak volíme specialozované nástroje (RStudio aj.)
-
 Do této části patří i klientské aplikace vyvinuté pro práci s platformou. První je klientský panel, který pro klienty slouží jako rozcestník mezi jednotlivými výstupy z datových sad - modul #Client Panel. Druhou aplikací je pak správa API klíčů pro přístup k datům pro vývojáře a externí systémy - #Client API Management.
 
 ## Moduly platformy
 
-Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy tak, aby bylo možné je nahradit jinými komponentami, popř. SaaS.
+Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy tak, aby bylo možné je nahradit jinými komponentami.
 
 ### Schéma modulů
 
