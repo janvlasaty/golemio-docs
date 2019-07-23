@@ -242,6 +242,9 @@ DARK LIGHT SWITCH
 
 .form-switch.position-mobile {
   display: inline-block;
+  position: absolute;
+  right: 6rem;
+  top: 1.15rem;
 }
 .form-switch.position-desktop {
   display: none;
