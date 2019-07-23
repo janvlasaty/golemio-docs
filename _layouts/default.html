@@ -2,6 +2,7 @@
 
 <html lang="en-us">
 {% include head.html %}
+
 <body>
 
   <div class="page-wrap">
@@ -9,16 +10,19 @@
       <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">
         {{ site.title }}
       </a>
-      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button"
+          data-text-toggle="Hide">Menu</button></span>
       <div class="navigation main-nav js-main-nav">
         <!-- <span class="site-title-label">{{ site.titlelabel }}</span> -->
         {% include nav.html %}
       </div>
       <footer role="contentinfo" class="site-footer">
         <p class="text-small text-grey-dk-000 mb-0">
-          Toto je projekt <a href="https://praha.eu/" target="_blank">Hlavního města Praha</a>.
+          Více o projektu na <a href="//golemio.cz/" target="_blank">www.golemio.cz</a>.
+          <hr>
+          Zadavatel <a href="//praha.eu/" target="_blank">Hlavní města Praha</a>.
           <br>
-          Vytvořil <a href="https://operatorict.cz/" target="_blank">Operátor ICT a.s.</a>
+          Autor <a href="//operatorict.cz/" target="_blank">Operátor ICT a.s.</a>
         </p>
       </footer>
     </div>
@@ -28,36 +32,100 @@
           {% if site.search_enabled != nil %}
           <div class="search js-search">
             <div class="search-input-wrap">
-              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Hledat v {{ site.title }}" aria-label="Hledat {{ site.title }}" autocomplete="off">
-              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Hledat</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+              <input type="text" class="js-search-input search-input" tabindex="0"
+                placeholder="Hledat v {{ site.title }}" aria-label="Hledat {{ site.title }}" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+                <title>Hledat</title>
+                <g fill-rule="nonzero">
+                  <path
+                    d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" />
+                  <path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" />
+                </g>
+              </svg>
             </div>
             <div class="js-search-results search-results-wrap"></div>
           </div>
           {% endif %}
+          <label class="form-switch">
+            <svg version="1.1" id="moon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <path d="M401.4,354.2c-2.9,0.1-5.8,0.2-8.7,0.2c-47.9,0-93-18.9-126.8-53.4c-33.9-34.4-52.5-80.1-52.5-128.8
+              c0-27.7,6.1-54.5,17.5-78.7c3.1-6.6,9.3-16.6,13.6-23.4c1.9-2.9-0.5-6.7-3.9-6.1c-6,0.9-15.2,2.9-27.7,6.8
+              C135.1,95.5,80,168.7,80,255c0,106.6,85.1,193,190.1,193c58,0,110-26.4,144.9-68.1c6-7.2,11.5-13.8,16.4-21.8c1.8-3-0.7-6.7-4.1-6.1
+              C418.8,353.7,410.2,353.8,401.4,354.2z" fill="#0695d8" />
+            </svg>
+            <svg version="1.1" id="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M256,387c-8.5,0-15.4,6.9-15.4,15.4v46.2c0,8.5,6.9,15.4,15.4,15.4s15.4-6.9,15.4-15.4v-46.2
+                  C271.4,393.9,264.5,387,256,387z" fill="#0695d8" />
+                  <path
+                    d="M256,48c-8.5,0-15.4,6.9-15.4,15.4v46.2c0,8.5,6.9,15.4,15.4,15.4s15.4-6.9,15.4-15.4V63.4C271.4,54.9,264.5,48,256,48z"
+                    fill="#0695d8" />
+                  <path d="M125,256c0-8.5-6.9-15.4-15.4-15.4H63.4c-8.5,0-15.4,6.9-15.4,15.4c0,8.5,6.9,15.4,15.4,15.4h46.2
+                  C118.1,271.4,125,264.5,125,256z" fill="#0695d8" />
+                  <path d="M448.6,240.6h-46.2c-8.5,0-15.4,6.9-15.4,15.4c0,8.5,6.9,15.4,15.4,15.4h46.2c8.5,0,15.4-6.9,15.4-15.4
+                  C464,247.5,457.1,240.6,448.6,240.6z" fill="#0695d8" />
+                  <path d="M152.5,344.1c-4.1,0-8,1.6-10.9,4.5l-32.7,32.7c-2.9,2.9-4.5,6.8-4.5,10.9s1.6,8,4.5,10.9c2.9,2.9,6.8,4.5,10.9,4.5
+                  c4.1,0,8-1.6,10.9-4.5l32.7-32.7c6-6,6-15.8,0-21.8C160.5,345.7,156.6,344.1,152.5,344.1z"
+                    fill="#0695d8" />
+                  <path
+                    d="M359.5,167.9c4.1,0,8-1.6,10.9-4.5l32.7-32.7c2.9-2.9,4.5-6.8,4.5-10.9s-1.6-8-4.5-10.9c-2.9-2.9-6.8-4.5-10.9-4.5
+                  c-4.1,0-8,1.6-10.9,4.5l-32.7,32.7c-2.9,2.9-4.5,6.8-4.5,10.9s1.6,8,4.5,10.9C351.5,166.3,355.4,167.9,359.5,167.9z"
+                    fill="#0695d8" />
+                  <path d="M130.7,108.9c-2.9-2.9-6.8-4.5-10.9-4.5c-4.1,0-8,1.6-10.9,4.5c-2.9,2.9-4.5,6.8-4.5,10.9c0,4.1,1.6,8,4.5,10.9l32.7,32.7
+                  c2.9,2.9,6.8,4.5,10.9,4.5c4.1,0,8-1.6,10.9-4.5c2.9-2.9,4.5-6.8,4.5-10.9s-1.6-8-4.5-10.9L130.7,108.9z"
+                    fill="#0695d8" />
+                  <path d="M370.4,348.6c-2.9-2.9-6.8-4.5-10.9-4.5c-4.1,0-8,1.6-10.9,4.5c-6,6-6,15.8,0,21.8l32.7,32.7c2.9,2.9,6.8,4.5,10.9,4.5
+                  c4.1,0,8-1.6,10.9-4.5c2.9-2.9,4.5-6.8,4.5-10.9s-1.6-8-4.5-10.9L370.4,348.6z" fill="#0695d8" />
+                </g>
+                <path d="M256,160c-52.9,0-96,43.1-96,96s43.1,96,96,96c52.9,0,96-43.1,96-96S308.9,160,256,160L256,160z"
+                  fill="#0695d8" />
+              </g>
+            </svg>
+            <input type="checkbox" class="js-toggle-dark-mode">
+            <i></i>
+          </label>
+          <script>
+            const toggleDarkMode = document.querySelector('.js-toggle-dark-mode')
+            const cssFile = document.querySelector('[rel="stylesheet"]')
+            const originalCssRef = cssFile.getAttribute('href')
+            const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
+
+            addEvent(toggleDarkMode, 'click', function () {
+              if (cssFile.getAttribute('href') === originalCssRef) {
+                cssFile.setAttribute('href', darkModeCssRef)
+              } else {
+                cssFile.setAttribute('href', originalCssRef)
+              }
+            })
+          </script>
           {% if site.aux_links != nil %}
-            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
-              {% for link in site.aux_links %}
-                <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %}"><a href="{{ link.last }}">{{ link.first }}</a></li>
-              {% endfor %}
-            </ul>
+          <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+            {% for link in site.aux_links %}
+            <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %}"><a
+                href="{{ link.last }}">{{ link.first }}</a></li>
+            {% endfor %}
+          </ul>
           {% endif %}
         </div>
       </div>
       <div class="main-content">
         {% unless page.url == "/" %}
-          {% if page.parent %}
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                {% if page.grand_parent %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
-                  <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
-                {% else %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
-                {% endif %}
-                <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
-              </ol>
-            </nav>
-          {% endif %}
+        {% if page.parent %}
+        <nav class="breadcrumb-nav">
+          <ol class="breadcrumb-nav-list">
+            {% if page.grand_parent %}
+            <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
+            <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
+            {% else %}
+            <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
+            {% endif %}
+            <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
+          </ol>
+        </nav>
+        {% endif %}
         {% endunless %}
         <div id="main-content" class="page-content" role="main">
           {{ content }}
@@ -68,11 +136,11 @@
           {% assign children_list = site.pages | sort:"nav_order" %}
           <ul>
             {% for child in children_list %}
-              {% if child.parent == page.title and child.title != page.title %}
-              <li>
-                <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
-              </li>
-              {% endif %}
+            {% if child.parent == page.title and child.title != page.title %}
+            <li>
+              <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+            </li>
+            {% endif %}
             {% endfor %}
           </ul>
           {% endif %}
@@ -82,4 +150,5 @@
   </div>
 
 </body>
+
 </html>
