@@ -266,3 +266,15 @@ img.img-highlighted {
   max-height: 30rem;
   background: white;
 }
+
+blockquote {
+  border-left: .25rem solid #0695d8;
+  margin: 0rem;
+  padding: 0rem 2rem;
+  background: #f5f6fa;
+  border-radius: 0.25rem;
+}
+
+blockquote p {
+  margin: 1rem auto;
+}
