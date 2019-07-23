@@ -183,7 +183,10 @@ const cssFile = document.querySelector('[rel="stylesheet"]')
 const originalCssRef = cssFile.getAttribute('href')
 const darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
 
-addEvent(toggleDarkMode, 'click', function () {
+addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode() })
+addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode() })
+
+function switchLightDarkMode() {
   if (cssFile.getAttribute('href') === originalCssRef) {
     cssFile.setAttribute('href', darkModeCssRef)
     toggleDarkModeMobile.checked = true
