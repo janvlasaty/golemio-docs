@@ -241,16 +241,16 @@ DARK LIGHT SWITCH
 
 
 .form-switch.position-mobile {
-  display: none;
+  display: inline-block;
 }
 .form-switch.position-desktop {
-  display: inline-block;
+  display: none;
 }
 @media (min-width: 46.25rem) {
   .form-switch.position-mobile {
-    display: inline-block;
+    display: none;
   }
   .form-switch.position-desktop {
-    display: none;
+    display: inline-block;
   }
 }
