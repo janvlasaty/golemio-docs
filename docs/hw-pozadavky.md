@@ -14,11 +14,10 @@ permalink: /docs/hw-pozadavky
 
 Všechny moduly platformy lze provozovat na localhostu ve specifikaci: 4 jádra CPU, 8 GB RAM, 100GB HDD.
 
-Doporučená, otestovaná, vývojová specifikace:
+Doporučená, otestovaná, vývojová specifikace serverů:
 
-- VPS (4 jádra CPU, 8 GB RAM, 100GB HDD, Debian)
-    - Beckend aplikační server
-- VPS (4 jádra CPU, 8 GB RAM, 100GB HDD, Debian)
-    - Databázový server
-- VPS (4 jádra CPU, 8 GB RAM, 100GB HDD, Debian)
-    - Monitorovací server
+| Název serveru | CPU | RAM | Disk | OS |
+|:-|:-|:-|
+| Backend aplikace | > 4 jádra | > 8 GB  | > 100GB | Debian
+| Databázový server | > 4 jádra | > 16 GB  | > 500GB | Debian
+| Monitorovací server | > 2 jádra | > 4 GB  | > 100GB | Debian

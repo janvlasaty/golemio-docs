@@ -26,7 +26,10 @@ permalink: /docs/public-api/
 
 Na stránce [api.golemio.cz/api-keys](//api.golemio.cz/api-keys){:target="_blank"} si lze po bezplatné registraci a ověření přes váš email vygenerovat `api-key` pro přístup k API.
 
-Pro demonstrační účely lze použít i dočasný `api-key`: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG9wZX`.
+Pro demonstrační účely lze použít i dočasný `api-key`: 
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG9wZX
+```
 **POZOR** - tento klíč má omezený `rate-limit` a může být kdykoliv revalidován!
 
 ## Dokumentace datových sad
