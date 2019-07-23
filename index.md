@@ -12,7 +12,7 @@ permalink: /
 
 **Datová platforma je soubor SW nástrojů pro integraci, ukládání a vizualizaci dat z městského prostředí, zejména pak v oblasti Smart City dat.**
 
-<img src="/golemio-docs/assets/images/schemas/GolemioAim.svg" alt="Schéma architektury"/>
+<img src="/golemio-docs/assets/images/schemas/GolemioAim.svg" alt="Základní funkční schéma" class="img-highlighted"/>
 
 ### Co umí platforma zpracovat?
 
@@ -55,7 +55,7 @@ Jednotlivé moduly platformy zajišťují vždy jednu z funkcí a jsou navrženy
 
 ### Schéma modulů
 
-<img src="/golemio-docs/assets/images/schemas/DP_schema_general.svg" alt="Schéma architektury" style="margin-botom: 1rem;"/>
+<img src="/golemio-docs/assets/images/schemas/DP_schema_general.svg" alt="Schéma architektury" class="img-highlighted"/>
 
 #### Integrační moduly platformy
 
