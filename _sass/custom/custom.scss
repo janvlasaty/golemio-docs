@@ -238,3 +238,19 @@ DARK LIGHT SWITCH
   left: 6px;
   top: 5px;
 }
+
+
+.form-switch.position-mobile {
+  display: none;
+}
+.form-switch.position-desktop {
+  display: block;
+}
+@media (min-width: 46.25rem) {
+  .form-switch.position-mobile {
+    display: block;
+  }
+  .form-switch.position-desktop {
+    display: none;
+  }
+}
