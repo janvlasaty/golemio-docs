@@ -3,6 +3,7 @@ layout: default
 title: Tutorialy
 nav_order: 4
 description: "Tutorialy Datové platformy Golemio."
+has_children: true
 permalink: /docs/tutorialy/
 ---
 

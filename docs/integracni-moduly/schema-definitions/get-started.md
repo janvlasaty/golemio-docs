@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Get Started
+title: Návody
 nav_order: 1
-description: "Output Gateway - Get Started"
-permalink: /docs/integracni-moduly/schema-definitions/get-started
-parent: Output Gateway
+description: "Schema Definitions - Návody"
+permalink: /docs/integracni-moduly/schema-definitions/navody
+parent: Schema Definitions
 grand_parent: Integrační moduly
 ---
 
-# Get started
+# Návody
 
-popis úvod
+- [Založení migračního skriptu](#)
+    - Návod jak vytvořit nové / upravit stávající databázové struktury pomocí migračních skriptů

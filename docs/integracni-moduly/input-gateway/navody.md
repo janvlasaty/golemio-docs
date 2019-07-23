@@ -3,7 +3,7 @@ layout: default
 title: Návody
 nav_order: 1
 description: "Input Gateway - Návody"
-permalink: /docs/integracni-moduly/input-gateway/Návody
+permalink: /docs/integracni-moduly/input-gateway/navody
 parent: Input Gateway
 grand_parent: Integrační moduly
 ---

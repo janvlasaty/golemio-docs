@@ -8,7 +8,7 @@ permalink: /docs/faq
 
 # FAQ
 
-> Zde je soubor nejčastějších dotazů k Datové platformě, pokud tento článek nezodpoví na vaše otázky, napište ná na [golemio@operatorict.cz](mailto:golemio@operatorict.cz)
+> Zde je soubor nejčastějších dotazů k Datové platformě, pokud tento článek nezodpoví na vaše otázky, napište nám na [golemio@operatorict.cz](mailto:golemio@operatorict.cz)
 
 ## Plní vaše řešení funkci IoT platformy ve smyslu sběru dat ze SigFox, Lora a dalších sítí?
 

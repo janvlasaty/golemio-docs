@@ -28,7 +28,7 @@ Na stránce [api.golemio.cz/api-keys](//api.golemio.cz/api-keys){:target="_blank
 
 Pro demonstrační účely lze použít i dočasný `api-key`: 
 ```
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG9wZX
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG9wZXJhdG9yaWN0LmN6IiwiaWQiOjIsIm5hbWUiOm51bGwsInN1cm5hbWUiOm51bGwsImlhdCI6MTU2MzM3MTk3NiwiZXhwIjoxMTU2MzM3MTk3NiwiaXNzIjoiZ29sZW1pbyIsImp0aSI6IjkzMzEzOWQ2LTk4YmEtNDcyMC05YWY2LWY3ZTM4Y2M2MTlhZiJ9.NAuRt-y5JLlbJSmEgfVuxdErVTneTZ9ngMgIxsBJW9Q
 ```
 **POZOR** - tento klíč má omezený `rate-limit` a může být kdykoliv revalidován!
 
