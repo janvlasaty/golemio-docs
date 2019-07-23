@@ -6,26 +6,19 @@ description: "HW požadavky Datové platformy Golemio."
 permalink: /docs/hw-pozadavky
 ---
 
-# FAQ
+# HW požadavky pro instalaci
 
-> Zde je soubor nejčastějších dotazů k Datové platformě, pokud tento článek nezodpoví na vaše otázky, napište ná na [golemio@operatorict.cz](mailto:golemio@operatorict.cz)
+> Řešení tvoří soubor aplikačních a databázových modulů, které jsou připraveny jako hotové Docker kontejnery. Pro orchestraci je zvolen Docker Swarm.
 
-## Plní vaše řešení funkci IoT platformy ve smyslu sběru dat ze SigFox, Lora a dalších sítí?
+## HW požadavky pro instalaci
 
-Nikoliv. V Praze jsme se dosud setkávali v projektech vždy s dodavateli poskytující standardní REST API skrze HTTP, není ani na pořadu dne ji využívat. Nicméně díky modularní architektuře platformy je možné kdykoliv předřadit existující řešení poskytující funkci IoT platformy pro komunikaci na odpovídajících IoT sítích.
+Všechny moduly platformy lze provozovat na localhostu ve specifikaci: 4 jádra CPU, 8 GB RAM, 100GB HDD.
 
-## Kdy bude celá Datová platforma Open Source?
+Doporučená, otestovaná, vývojová specifikace:
 
-Začali jsme publikovat zdrojové kódy v polovině roku 2019 postupně po jednotlivých modulech. V dalším průběhu roku 2019 je v plánu zveřejnit kompletní soubor modulů platformy.
-
-## Je připraven software k použití i pro nasazení v jiných městech?
-
-První fází je zveřejnit moduly tak, jak byly navrženy a jsou používány v Praze, v druhé fázi (rok 2020) se nebráníme snahám zobecnit řešení a umožnit jednoduše nasadit software i pro jiná města. Nemělo by to být těžké, s tímto cílem jsme řešení od počátku navrhovali.
-
-## Je to zadarmo?
-
-Publikovali jsme kódy pod licencí MIT, odpověď tedy zní ano, kódy můžete vzít a používat i pro komerční účely zadarmo v rámci podmínek této volné licence. Chcete-li si přečíst o tom, co MIT obnáší, doporučujeme článek na [choosealicense.com/licenses/mit/](//choosealicense.com/licenses/mit/).
-
-## Funguje to někde?
-
-Ano, samozřejmě, jde o řešení, které aktuálně používá Praha pro integraci městských dat.
+- VPS (4 jádra CPU, 8 GB RAM, 100GB HDD, Debian)
+    - Beckend aplikační server
+- VPS (4 jádra CPU, 8 GB RAM, 100GB HDD, Debian)
+    - Databázový server
+- VPS (4 jádra CPU, 8 GB RAM, 100GB HDD, Debian)
+    - Monitorovací server
