@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Zpoždění spojů
-permalink: /docs/realtime-api/zpozdeni-spoju
+permalink: /docs/public-api/zpozdeni-spoju
 nav_order: 1
-parent: Realtime API
+parent: Public API
 ---
 
 ## Původní informace o zpoždění spoje

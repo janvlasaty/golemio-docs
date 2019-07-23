@@ -244,7 +244,12 @@ DARK LIGHT SWITCH
   display: inline-block;
   position: absolute;
   right: 6rem;
-  top: 1.15rem;
+  top: 0rem;
+}
+@media (min-width: 31.25rem) {
+  .form-switch.position-mobile {
+    top: 1.15rem;
+  }
 }
 .form-switch.position-desktop {
   display: none;
