@@ -187,6 +187,8 @@ function initSwitchLightDarkMode() {
 
   addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode() })
   addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode() })
+
+  if (sessionStorage.getItem('darkModeOn')===true) switchLightDarkMode()
 }
 
 function switchLightDarkMode() {
@@ -194,9 +196,11 @@ function switchLightDarkMode() {
     cssFile.setAttribute('href', darkModeCssRef)
     toggleDarkModeMobile.checked = true
     toggleDarkModeDesktop.checked = true
+    sessionStorage.setItem('darkModeOn',true)
   } else {
     cssFile.setAttribute('href', originalCssRef)
     toggleDarkModeMobile.checked = false
     toggleDarkModeDesktop.checked = false
+    sessionStorage.removeItem('darkModeOn')
   }
 }
