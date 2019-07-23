@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Public API
-nav_order: 4
+nav_order: 6
 description: "Informace k Public API."
 has_children: true
 permalink: /docs/public-api/
