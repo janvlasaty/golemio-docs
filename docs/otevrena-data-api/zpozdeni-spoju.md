@@ -3,7 +3,7 @@ layout: default
 title: Zpoždění spojů
 permalink: /docs/public-api/zpozdeni-spoju
 nav_order: 1
-parent: Public API
+parent: Otevřená data & API
 ---
 
 ## Původní informace o zpoždění spoje

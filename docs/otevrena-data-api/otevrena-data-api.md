@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Public API
+title: Otevřená data & API
 nav_order: 6
-description: "Informace k Public API."
+description: "Informace k publikovaným otevřeným datům a veřejnému API."
 has_children: true
-permalink: /docs/public-api/
+permalink: /docs/otevrena-data-api/
 ---
 
-# Public API
+# Otevřená data & API
 
 > V rámci projektu poskytuje široké veřejnosti data k dalšímu použití jako tzv. Open Data. Data jsou povahou realtime data, statistická data, popř. číselníky, katalogy a mapová data.
 
@@ -20,9 +20,13 @@ permalink: /docs/public-api/
 - Public API - Realtime přístup do Datové platformy Golemio
     - REST API zdokumentované na [outputgateway.docs.apiary.io](//outputgateway.docs.apiary.io){:target="_blank"}
     - Přístup zabezpečený pomocí `api-key`, nebo `JWT`
-    - Doku
 
-## Přístup k Public API
+
+## Publikovaná data v katalogu OD
+
+Operátor ICT provozuje pro HMP katalog otevřených dat, na data, která zvěřejňuje z projektu Golemio se lze dostat na [opendata.praha.eu/dataset?organization=operatorict](http://opendata.praha.eu/dataset?organization=operatorict).
+
+## Přístup k veřejnému API
 
 Na stránce [api.golemio.cz/api-keys](//api.golemio.cz/api-keys){:target="_blank"} si lze po bezplatné registraci a ověření přes váš email vygenerovat `api-key` pro přístup k API.
 
