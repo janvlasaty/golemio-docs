@@ -14,18 +14,26 @@ permalink: /docs/hw-pozadavky
 
 Všechny moduly platformy lze provozovat na localhostu ve specifikaci: 4 jádra CPU, 8 GB RAM, 100GB HDD.
 
+### Hello world specifikace serverů:
+
+| Název serveru | CPU | RAM | Disk | OS |
+|:-|:-|:-|:-|:-|
+| All in one | >= 6 jader | >= 8 GB | 200 GB | Debian |
+
 ### Vývojová specifikace serverů:
 
 | Název serveru | CPU | RAM | Disk | OS |
-|:-|:-|:-|
-| Backend aplikace | > 4 jádra | > 8 GB  | > 100GB | Debian
-| Databázový server | > 4 jádra | > 16 GB  | > 500GB | Debian
-| Monitorovací server | > 2 jádra | > 4 GB  | > 100GB | Debian
+|:-|:-|:-|:-|:-|
+| Frontend server     | >= 1 jader | >= 1 GB |  64 GB | Debian |
+| Backend aplikace    | >= 2 jádra | >= 4 GB | 128 GB | Debian |
+| Databázový server   | >= 2 jádra | >= 4 GB | 200 GB | Debian |
+| Monitorovací server | >= 2 jádra | >= 4 GB | 128 GB | Debian |
 
 ### Produkční specifikace serverů:
 
 | Název serveru | CPU | RAM | Disk | OS |
-|:-|:-|:-|
-| Backend aplikace | > 8 jader | > 16 GB  | > 100GB | Debian
-| Databázový server | > 8 jader | > 32 GB  | > 1000GB | Debian
-| Monitorovací server | > 4 jádra | > 8 GB  | > 200GB | Debian
+|:-|:-|:-|:-|:-|
+| Frontend server     | >= 2 jader | >= 2 GB |    64 GB | Debian |
+| Backend aplikace    | >= 4 jader | >= 8 GB |   128 GB | Debian |
+| Databázový server   | >= 4 jader | >= 8 GB | 1 024 GB | Debian |
+| Monitorovací server | >= 2 jádra | >= 8 GB |   128 GB | Debian |
