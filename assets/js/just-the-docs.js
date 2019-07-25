@@ -196,7 +196,9 @@ function initSwitchLightDarkMode() {
     switchLightDarkMode()
 
   prefersColorSchemeDark.addListener(function(){
-    if (prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')==null) 
+    if (prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')==null && cssFile.getAttribute('href') === originalCssRef) 
+      switchLightDarkMode()
+    if (!prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')==null && cssFile.getAttribute('href') !== originalCssRef) 
       switchLightDarkMode()
   });
 }
@@ -211,6 +213,6 @@ function switchLightDarkMode(type = 'automatic') {
     cssFile.setAttribute('href', originalCssRef)
     toggleDarkModeMobile.checked = false
     toggleDarkModeDesktop.checked = false
-    sessionStorage.removeItem('darkModeOn')
+    if (type=='manual') sessionStorage.setItem('darkModeOn',false)
   }
 }
