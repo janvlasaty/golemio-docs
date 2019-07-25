@@ -188,7 +188,10 @@ function initSwitchLightDarkMode() {
   addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode() })
   addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode() })
 
-  if (sessionStorage.getItem('darkModeOn')=="true") switchLightDarkMode()
+  if (sessionStorage.getItem('darkModeOn')=="true") 
+    switchLightDarkMode()
+  else if (matchMedia('(prefers-color-scheme: dark)').matches) 
+    switchLightDarkMode()
 }
 
 function switchLightDarkMode() {
