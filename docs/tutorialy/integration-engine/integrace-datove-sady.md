@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Návody
+title: Integrace datové sady
 nav_order: 1
-description: "Schema Definitions - Návody"
-permalink: /docs/integracni-moduly/schema-definitions/navody
-parent: Schema Definitions
-grand_parent: Integrační moduly
+description: "Tutorialy - Integration Engine - Integrace datové sady"
+permalink: /docs/tutorialy/integration-engine/integrace-datove-sady
+parent: Integration Engine
+grand_parent: Tutorialy
 ---
 
 # Integration Engine - Integrace datové sady

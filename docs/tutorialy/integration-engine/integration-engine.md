@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorialy - Integration Engine
+title: Integration Engine
 nav_order: 3
 description: "Tutorialy k modulu Integration Engine"
 permalink: /docs/tutorialy/integration-engine/
