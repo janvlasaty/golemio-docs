@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Integration Engine [návody]
+title: Input Gateway [návody]
 nav_order: 3
-description: "Tutorialy k modulu Integration Engine"
-permalink: /docs/tutorialy/integration-engine/
+description: "Tutorialy k modulu Input Gateway"
+permalink: /docs/tutorialy/input-gateway/
 has_children: true
 parent: Tutorialy
 ---
 
-# Tutorialy - Integration Engine
+# Tutorialy - Input Gateway
 
 ## Prerekvizity, instalace, testy, API dokumentace
 

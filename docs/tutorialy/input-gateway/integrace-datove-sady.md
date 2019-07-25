@@ -2,13 +2,13 @@
 layout: default
 title: Integrace datové sady
 nav_order: 1
-description: "Tutorialy - Integration Engine - Integrace datové sady"
-permalink: /docs/tutorialy/integration-engine/integrace-datove-sady
-parent: Integration Engine [návody]
+description: "Tutorialy - Input Gateway - Integrace datové sady"
+permalink: /docs/tutorialy/input-gateway/integrace-datove-sady
+parent: Input Gateway [návody]
 grand_parent: Tutorialy
 ---
 
-# Integration Engine - Integrace datové sady
+# Input Gateway - Integrace datové sady
 
 1. vytvoření nové složky v `input-gateway/src/resources`
 1. v této složce vytvoření nového souboru `Router` a `Controller`
