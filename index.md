@@ -6,11 +6,12 @@ description: "Dokumentace Datové platformy."
 permalink: /
 ---
 
-<blockquote class="blockquote-warning">
-Upozornění! Zveřejňování zdrojových kódů společně s dokuemntací modulů Datové platformy Golemio je postupné a bude probíhat v druhé polovině roku 2019. Je tak možné, že některé části nebudou fungovat bez logicky závislých modulů / databází apod. Máte-li však k něčemu dotazy, neváhejte se na nás ihned obrátit na [golemio@operatorict.cz](mailto:golemio@operatorict.cz). Snažíme se to "mít venku" co nejdřív 😉.
-</blockquote>
-
 # Obecná dokumentace Datové platformy
+
+<blockquote class="blockquote-warning">
+<b>Upozornění!</b> Zveřejňování zdrojových kódů společně s dokuemntací modulů Datové platformy Golemio je postupné a bude probíhat v druhé polovině roku 2019. Je tak možné, že některé části nebudou fungovat bez logicky závislých modulů / databází apod. Máte-li však k něčemu dotazy, neváhejte se na nás ihned obrátit na [golemio@operatorict.cz](mailto:golemio@operatorict.cz). 
+<br>Snažíme se to "mít venku" co nejdřív 😉.
+</blockquote>
 
 > Datová platforma je soubor SW nástrojů pro integraci, ukládání a vizualizaci dat z městského prostředí, zejména pak v oblasti Smart City dat.
 

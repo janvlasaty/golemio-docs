@@ -185,21 +185,28 @@ function initSwitchLightDarkMode() {
   originalCssRef = cssFile.getAttribute('href')
   darkModeCssRef = originalCssRef.replace('just-the-docs.css', 'dark-mode-preview.css')
 
-  addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode() })
-  addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode() })
+  addEvent(toggleDarkModeMobile, 'click', function () { switchLightDarkMode('manual') })
+  addEvent(toggleDarkModeDesktop, 'click', function () { switchLightDarkMode('manual') })
+
+  var prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
 
   if (sessionStorage.getItem('darkModeOn')=="true") 
     switchLightDarkMode()
-  else if (matchMedia('(prefers-color-scheme: dark)').matches) 
+  else if (prefersColorSchemeDark.matches) 
     switchLightDarkMode()
+
+  prefersColorSchemeDark.addListener(function(){
+    if (prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')==null) 
+      switchLightDarkMode()
+  });
 }
 
-function switchLightDarkMode() {
+function switchLightDarkMode(type = 'automatic') {
   if (cssFile.getAttribute('href') === originalCssRef) {
     cssFile.setAttribute('href', darkModeCssRef)
     toggleDarkModeMobile.checked = true
     toggleDarkModeDesktop.checked = true
-    sessionStorage.setItem('darkModeOn',true)
+    if (type=='manual') sessionStorage.setItem('darkModeOn',true)
   } else {
     cssFile.setAttribute('href', originalCssRef)
     toggleDarkModeMobile.checked = false
