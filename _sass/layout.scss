@@ -87,6 +87,7 @@
 
   .main-content {
     padding-top: 0;
+    padding-bottom: $sp-2;
 
     @include mq(md) {
       display: flex;
