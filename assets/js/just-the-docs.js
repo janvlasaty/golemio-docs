@@ -190,9 +190,10 @@ function initSwitchLightDarkMode() {
 
   var prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-  if (sessionStorage.getItem('darkModeOn')=="true") 
-    switchLightDarkMode()
-  else if (prefersColorSchemeDark.matches) 
+  if (
+    sessionStorage.getItem('darkModeOn')=="true" ||
+    (prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')!="false")
+    ) 
     switchLightDarkMode()
 
   prefersColorSchemeDark.addListener(function(){
@@ -201,6 +202,10 @@ function initSwitchLightDarkMode() {
     if (!prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')==null && cssFile.getAttribute('href') !== originalCssRef) 
       switchLightDarkMode()
   });
+}
+
+function getModeState() {
+  return ( cssFile.getAttribute('href') === originalCssRef ) ? 'light' : 'dark'
 }
 
 function switchLightDarkMode(type = 'automatic') {
