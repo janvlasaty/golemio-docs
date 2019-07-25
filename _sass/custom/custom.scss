@@ -274,17 +274,17 @@ img.img-highlighted {
 
 
 blockquote {
-  border-left: $sp-1 solid $blockqoute-border-color;
+  border-left: $sp-1 solid $blockquote-border-color;
   margin: 0;
   padding: $sp-4 $sp-6;
-  background: $blockqoute-background-color;
+  background: $blockquote-background-color;
   border-radius: $sp-1;
 }
 
-blockquote.blockqoute-warning {
-  border-color: $blockqoute-warning-border-color;
-  background: $blockqoute-warning-background-color;
-  color: $blockqoute-warning-color;
+blockquote.blockquote-warning {
+  border-color: $blockquote-warning-border-color;
+  background: $blockquote-warning-background-color;
+  color: $blockquote-warning-color;
 }
 
 blockquote p {
