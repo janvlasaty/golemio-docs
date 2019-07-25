@@ -4,7 +4,7 @@ title: Integrace datové sady
 nav_order: 1
 description: "Tutorialy - Integration Engine - Integrace datové sady"
 permalink: /docs/tutorialy/integration-engine/integrace-datove-sady
-parent: Integration Engine 
+parent: Integration Engine [návody]
 grand_parent: Tutorialy
 ---
 
