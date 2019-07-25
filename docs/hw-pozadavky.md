@@ -1,7 +1,7 @@
 ---
 layout: default
 title: HW požadavky
-nav_order: 2
+nav_order: 3
 description: "HW požadavky Datové platformy Golemio."
 permalink: /docs/hw-pozadavky
 ---
