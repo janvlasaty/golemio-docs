@@ -6,6 +6,9 @@ description: "Dokumentace Datové platformy."
 permalink: /
 ---
 
+> Upozornění! Zveřejňování zdrojových kódů společně s dokuemntací modulů Datové platformy Golemio je postupné a bude probíhat v druhé polovině roku 2019. Je tak možné, že některé části nebudou fungovat bez logicky závislých modulů / databází apod. Máte-li však k něčemu dotazy, neváhejte se na nás ihned obrátit na [golemio@operatorict.cz](mailto:golemio@operatorict.cz). Snažíme se to "mít veknu" co nejdřív😉.
+{:class="blockquote-warning"})
+
 # Obecná dokumentace Datové platformy
 
 > Datová platforma je soubor SW nástrojů pro integraci, ukládání a vizualizaci dat z městského prostředí, zejména pak v oblasti Smart City dat.
@@ -23,9 +26,8 @@ permalink: /
     * data o aktuální dopravní situaci (kongesce, nehody, výluky)
     * realtime parkovací situace (P+R, on-street v zonách placeného stání, komerční parkoviště, stání pro ZTP řidiče)
 * Ovzduší
-    * meteostanice na území Prahy
+    * polutanty, teplotu, vlhkost, index kvality aj. senzorická data z meteostanic
     * Smart City prvky se senzory městského prostředí
-    * 
 * Pohyb
     * sčítače průchodů chodců
     * cyklosčítače (detektory průjezdů, mobilní cyklonavigace)
@@ -51,10 +53,18 @@ permalink: /
 * Klient - **Městské společnosti**
     * BI reporting, tvorba analýz a podkladů
     * Realizace integrační mezivrtstvy mezi různými IT systémy
+* Klient - **Komerční subjekty**
+    * Výměna dat sloužící městu pro lepší rozhodování
+    * Otevřená spolupráce zplešující městské služby
 * Klient - **Veřejnost**
     * Veřejné webové aplikace
     * Opendata
     * Public API pro integraci do aplikací třetích stran
+
+## Platformu tvoří nejen soubor SW nástrojů, ale i tým odborníků
+
+Cílem projektu je vytvořit jednotnou platformu pro data z tzv. Smart City oblasti, tedy oblasti senzorických dat, dat z nových technologií a aplikací.
+Nechceme být datovým hrobem pro všechna data ze všech IT systémů města bez dalšího účelu a využití.
 
 ## Moduly platformy
 

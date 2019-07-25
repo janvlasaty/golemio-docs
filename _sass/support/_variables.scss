@@ -25,6 +25,13 @@ $grey-lt-100: #eeebee !default;
 $grey-lt-200: #ecebed !default;
 $grey-lt-300: #e6e1e8 !default;
 
+$orange-000: #fff8f2 !default;
+$orange-100: #ffebda !default;
+$orange-200: #ffd1ac !default;
+$orange-300: #ffab70 !default;
+$orange-400: #fb8532 !default;
+$orange-999: #5c2500 !default;
+
 $purple-000: #7253ed !default;
 $purple-100: #5e41d0 !default;
 $purple-200: #4e26af !default;
@@ -63,6 +70,10 @@ $base-button-color: #f7f7f7 !default;
 
 $blockqoute-background-color: $grey-lt-000 !default;
 $blockqoute-border-color: $blue-000 !default;
+
+$blockqoute-warning-background-color: $orange-000 !default;
+$blockqoute-warning-border-color: $orange-400 !default;
+$blockqoute-warning-color: $orange-400 !default;
 
 //
 // Media queries in pixels

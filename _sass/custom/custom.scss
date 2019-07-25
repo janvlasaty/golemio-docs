@@ -281,6 +281,12 @@ blockquote {
   border-radius: $sp-1;
 }
 
+blockquote.blockqoute-warning {
+  border-color: $blockqoute-warning-border-color;
+  background: $blockqoute-warning-background-color;
+  color: $blockqoute-warning-color;
+}
+
 blockquote p {
   margin: 0rem auto;
 }
