@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Technické zadání
-nav_order: 3
+nav_order: 1
 description: "Funkční požadavky vývoje Datové platformy."
-permalink: /docs/technicke-zadani
+permalink: /docs/popis-reseni/technicke-zadani
+parent: Popis řešení
 ---
 
 # Technické zadání

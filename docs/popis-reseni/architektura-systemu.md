@@ -19,7 +19,7 @@ Architektura systému kloubí výhody microservice-oriented architektury (flexib
 
 Celý systém je provozován na virtualizované infrastruktuře, jednotlivé aplikace v kontejnerizovaném prostředí (Docker). Nad kontejnery je vystavena orchestrační vrstva, která se stará o load balancing, clusterování, nasazování nových verzí (tzv. rolling update u jednotlivých služeb, kdy se nejprve spustí druhá instance v nové verzi, přesměruje se traffic a až následně se stará verze vypne, proto je dosažen zero-downtime deployment) apod. 
 
-Aplikace je rozdělena do jednotlivých samostatných modulů:
+## Aplikace je rozdělena do jednotlivých samostatných modulů:
 
 * Vstupní rozhraní (input gateway),
 * Přístupová vrstva (ACL, permission proxy),
@@ -31,7 +31,16 @@ Aplikace je rozdělena do jednotlivých samostatných modulů:
 * Dispečink a datová analýza (client panel),
 * Správa časově řízených úkonů (CRON).
 
-Rámcové schéma architektury:
+## Rámcové schéma architektury:
 
 Následující schéma popisuje jednotlivé moduly řešení vč. způsobu napojení mezi nimi (druh připojení, rozhraní) a naznačení komunikace a závislostí. Každý modul obsahuje svůj název a název projektu projektu (repozitáře).
 
+<img src="/golemio-docs/assets/images/schemas/Architecture_schema.svg" alt="Technologické Schéma architektury" class="img-highlighted"/>
+
+# Technologické schéma
+
+<img src="/golemio-docs/assets/images/schemas/Technology_schema.svg" alt="Technologické Schéma architektury" class="img-highlighted"/>
+
+# Infrastrukturní schéma
+
+<img src="/golemio-docs/assets/images/schemas/Infrastructure_schema.svg" alt="Technologické Schéma architektury" class="img-highlighted"/>
