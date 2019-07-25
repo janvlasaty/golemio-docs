@@ -6,8 +6,9 @@ description: "Dokumentace Datové platformy."
 permalink: /
 ---
 
-> Upozornění! Zveřejňování zdrojových kódů společně s dokuemntací modulů Datové platformy Golemio je postupné a bude probíhat v druhé polovině roku 2019. Je tak možné, že některé části nebudou fungovat bez logicky závislých modulů / databází apod. Máte-li však k něčemu dotazy, neváhejte se na nás ihned obrátit na [golemio@operatorict.cz](mailto:golemio@operatorict.cz). Snažíme se to "mít veknu" co nejdřív😉.
-{:class="blockquote-warning"})
+<blockquote class="blockquote-warning">
+Upozornění! Zveřejňování zdrojových kódů společně s dokuemntací modulů Datové platformy Golemio je postupné a bude probíhat v druhé polovině roku 2019. Je tak možné, že některé části nebudou fungovat bez logicky závislých modulů / databází apod. Máte-li však k něčemu dotazy, neváhejte se na nás ihned obrátit na [golemio@operatorict.cz](mailto:golemio@operatorict.cz). Snažíme se to "mít veknu" co nejdřív😉.
+</blockquote>
 
 # Obecná dokumentace Datové platformy
 
