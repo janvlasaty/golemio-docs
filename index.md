@@ -12,7 +12,7 @@ permalink: /
 <b>Upozornění!</b> Zveřejňování zdrojových kódů společně s dokuemntací modulů Datové platformy Golemio je postupné a bude probíhat v druhé polovině roku 2019. Je tak možné, že některé části nebudou fungovat bez logicky závislých modulů / databází apod. Máte-li však k něčemu dotazy, neváhejte se na nás ihned obrátit na <a href="mailto:golemio@operatorict.cz">golemio@operatorict.cz</a>. 
 <br>Snažíme se to "mít venku" co nejdřív 😉.
 </blockquote>
-<br><br>
+<br>
 
 > Datová platforma je soubor SW nástrojů pro integraci, ukládání a vizualizaci dat z městského prostředí, zejména pak v oblasti Smart City dat.
 
