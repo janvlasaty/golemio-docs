@@ -4,7 +4,7 @@ title: Input Gateway
 nav_order: 2
 description: "Modul Input Gateway"
 permalink: /docs/integracni-moduly/input-gateway/
-has_children: true
+# has_children: true
 parent: Integrační moduly
 ---
 

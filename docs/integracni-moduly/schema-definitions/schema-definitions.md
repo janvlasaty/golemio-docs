@@ -4,7 +4,7 @@ title: Schema Definitions
 nav_order: 4
 description: "Dokumentace modulu Schema Definitions"
 permalink: /docs/integracni-moduly/schema-definitions/
-has_children: true
+# has_children: true
 parent: Integrační moduly
 ---
 
