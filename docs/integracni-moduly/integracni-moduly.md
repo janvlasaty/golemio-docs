@@ -19,7 +19,7 @@ margin-bottom: -1rem;"/>
 
 Modul pro řešení přístupových práv a ACL. Zkontroluje API klíč/přístupové údaje, provádí autentizaci a autorizaci a povoluje přístup k jednotlivým endpointům. Ukládá statistiky o využití. Navrženo jako “proxy” z důvodu požadavků na funkcionalitu přidělování práv: např. na základě API klíče povolovat přístup pouze k některým datům v DB (tedy na úrovni řádků) nebo přidání nějakých parametrů (např. limit) do požadavků.
 
-<img src="/golemio-docs/assets/images/logos/DP_icon_input_gateway.svg" alt="Schéma architektury" style="height: 60px; 
+<img src="/golemio-docs/assets/images/logos/DP_icon_input_gateway.svg" alt="Input gateway" style="height: 60px; 
 margin-top: 1rem;
 margin-bottom: -1rem;"/>
 
@@ -28,7 +28,17 @@ margin-bottom: -1rem;"/>
 Bezstavový server, vstupní RESTful API nadefinované dle popisu Apiary, testované přes Dredd nebo Postman API testy. Vstupní API přijímá push požadavky (POST) s daty ke zpracování, data zvaliduje a pošle do Message Queue ke zpracování.
 Node.js, Express, Typescript, Mongoose pro validaci, amqplib pro připojení k RabbitMQ, Docker
 
-<img src="/golemio-docs/assets/images/logos/DP_icon_message_broker.svg" alt="Schéma architektury" style="height: 60px; 
+
+<img src="/golemio-docs/assets/images/logos/DP_icon_output_gateway.svg" alt="Output gateway" style="height: 60px; 
+margin-top: 1rem;
+margin-bottom: -1rem;"/>
+
+## Output Gateway
+
+Bezstavový server, výstupní RESTful API nad integrovanými datovými sadami nadefinované dle popisu Apiary, testované přes Dredd nebo Postman API testy. Provádí dotazy do databází s možností parametrizace dotazů, cachuje výsledky dotazů.
+Node.js, Express, Typescript, Mongoose, Docker
+
+<img src="/golemio-docs/assets/images/logos/DP_icon_message_broker.svg" alt="Message broker" style="height: 60px; 
 margin-top: 1rem;
 margin-bottom: -1rem;"/>
 
@@ -36,7 +46,7 @@ margin-bottom: -1rem;"/>
 
 Message Broker je modul pro předávání zpráv ve frontovém systému. Pro různé datové sady definujeme různě komplexní workflow a právě Message Broker slouží pro příjem dat/úkolů přes Exchange servery, které odešlou zprávy do specifických front. V současnosti využíváme platformu RabbitMQ. 
 
-<img src="/golemio-docs/assets/images/logos/DP_icon_integration_engine.svg" alt="Schéma architektury" style="height: 60px; 
+<img src="/golemio-docs/assets/images/logos/DP_icon_integration_engine.svg" alt="Integration engine" style="height: 60px; 
 margin-top: 1rem;
 margin-bottom: -1rem;"/>
 

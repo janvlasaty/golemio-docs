@@ -19,12 +19,14 @@ parent: Tutorialy
 - vytvoření migrace DB (nové tabulky, indexy)
 
 ## 3. Input Gateway
-- git repo: https://gitlab.oict.cz/data-platform/input-gateway
+- git repo: https://gitlab.com/operator-ict/golemio/input-gateway
 - tento krok pouze pokud jsou data posílána aktivně ze zdroje (PUSH)
 - vytvoření endpointu pro příjem dat
 - validace příchozích dat
 - odeslání dat do fronty
 - dokumentace (apiary)
+
+Viz: [gitlab.com/operator-ict/golemio/input-gateway/blob/master/docs/new_dataset_integration.md](//gitlab.com/operator-ict/golemio/input-gateway/blob/master/docs/new_dataset_integration.md).
 
 ## 4. Integration Engine
 - git repo: https://gitlab.oict.cz/data-platform/integration-engine
@@ -44,8 +46,10 @@ parent: Tutorialy
 - odeslat definici na DevOps
 
 ## 6. Output Gateway
-- git repo: https://gitlab.oict.cz/data-platform/output-gateway
+- git repo: https://gitlab.com/operator-ict/golemio/output-gateway
 - vytvoření rout pro dataset
 - definice všech filtru, limitů, atd. podle povahy dat
 - definice obohacení (linkování) dat, podle povahy dat
 - dokumentace (apiary)
+
+Viz: [gitlab.com/operator-ict/golemio/output-gateway/blob/master/docs/new_dataset_integration.md](//gitlab.com/operator-ict/golemio/output-gateway/blob/master/docs/new_dataset_integration.md).
