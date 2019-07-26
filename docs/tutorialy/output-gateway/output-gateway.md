@@ -12,4 +12,4 @@ parent: Tutorialy
 
 ## Prerekvizity, instalace, testy, API dokumentace
 
-Vše najdete v REAMDE tohoto projektu na [gitlab.com/operator-ict/golemio/output-gateway/README.md](//gitlab.com/operator-ict/golemio/output-gateway/README.md).
+Vše najdete v REAMDE tohoto projektu na [gitlab.com/operator-ict/golemio/output-gateway/blob/master/README.md](//gitlab.com/operator-ict/golemio/output-gateway/blob/master/README.md).

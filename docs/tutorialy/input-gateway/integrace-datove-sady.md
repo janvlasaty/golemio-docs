@@ -16,3 +16,5 @@ grand_parent: Tutorialy
 1. `app.use(<Router>)` v souboru `App.ts`
 1. vytvoření API Blueprint documentatace (`input-gateway/docs/apiary_docs.apib`), včetně  MSON specifikace datové struktury
 1. vytvoření testů (`input-gateway/test/resources`)
+
+Aktuální podrobnější návod pro integraci datové sady v tomto projektu najdete na [gitlab.com/operator-ict/golemio/input-gateway/blob/master/docs/new_dataset_integration.md](//gitlab.com/operator-ict/golemio/input-gateway/blob/master/docs/new_dataset_integration.md).

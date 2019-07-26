@@ -17,7 +17,7 @@ parent: Popis řešení
     1. Vystavené push API
 1. Systém bude umět oboustranně komunikovat s připojenými zařízeními
     1. Volání externího ovládacího API
-    1. Napojení přes websocket (v prototypu nebude)
+    1. Napojení přes websocket
 1. Systém bude zpracovávat statická data a data z API / DB
     1. Pull API
         1. JSON REST API
@@ -34,7 +34,7 @@ parent: Popis řešení
 
 ### Úložiště dat 
 
-1. V systému budou použity SQL a NoSQL databáze, účelem je otestovat možné varianty
+1. V systému budou použity SQL a NoSQL databáze s možným přímým přístupem pro datové analytiky
 1. Systém bude ukládat aktuální data (aktuální poloha, aktuální obsazenost)
 1. Systém bude ukládat historická data (historie obsazenosti, historie polohy, historie stavu)
 
@@ -105,7 +105,7 @@ parent: Popis řešení
 1. Předpokládaný objem dat je 1 TB za dobu 3 měsíců, řešení bude dimenzováno minimálně na tento objem
 1. Systém bude dimenzován na vstup 200 datových zpráv za 1s
 1. Řešení bude robustní k výpadku jakéhokoliv jednoho modulu (vrstvy) aplikace po omezený čas
-1. Celé řešení bude nasazené v režimu vysoké dostupnosti, odolné vůči výpadku jakéhokoliv z virtuálních strojů (pro prototyp není vyžadováno):
+1. Celé řešení bude nasazené v režimu vysoké dostupnosti, odolné vůči výpadku jakéhokoliv z virtuálních strojů:
 1. Systém bude provádět automatické zálohy dat z datového úložiště a ostatních modulů 
 1. Dostupnost služeb bude:
     * Výstupní API: 99,5
@@ -114,4 +114,4 @@ parent: Popis řešení
     * Monitoring: 99,5
     * Alerting: 99,5
 1. Součástí řešení je i návrh řešení Disaster recovery a kritických scénářů
-1. Součástí prototypu je návrh automatického zálohování, export dat pro migraci dat
+1. Součástí řešení je návrh automatického zálohování, export dat pro migraci dat
