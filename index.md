@@ -103,6 +103,10 @@ Nechceme být datovým hrobem pro všechna data ze všech IT systémů města be
 * Client API Management
 * Admin Permission Proxy Management
 
-## Tvůrce Datové platformy
+## Autor Datové platformy Golemio
 
-<img src="/golemio-docs/assets/images/logos/OICT_logo_grey.png" alt="Logo OICT" style="margin-botom: 1rem; min-width:200px; width: 30%;"/>
+Software byl vyvinut společností Operátor ICT a.s., konkrétně odděleními Data City Lab (dříve Datové platformy) a Vývoje a analýzy
+
+<img src="/golemio-docs/assets/images/logos/OICT_logo.svg" alt="Logo OICT" style="margin-botom: 1rem; height: 100px;"/>
+
+<img src="/golemio-docs/assets/images/logos/logo_praha.svg" alt="Logo Praha" style="margin-botom: 1rem; height: 100px"/>

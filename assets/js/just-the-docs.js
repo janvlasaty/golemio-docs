@@ -191,8 +191,8 @@ function initSwitchLightDarkMode() {
   var prefersColorSchemeDark = window.matchMedia('(prefers-color-scheme: dark)');
 
   if (
-    sessionStorage.getItem('darkModeOn')=="true" ||
-    (prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')!="false")
+    sessionStorage.getItem('darkModeOn')==="true" ||
+    (prefersColorSchemeDark.matches && sessionStorage.getItem('darkModeOn')!=="false")
     ) 
     switchLightDarkMode()
 
